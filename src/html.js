@@ -12,7 +12,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-       
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -28,21 +28,12 @@ export default function HTML(props) {
                                 ANSWERS.addComponent("SearchBar", {
                                     container: ".search_form",
                                     name: "search-bar", //Must be unique for every search bar on the same page
-                                    redirectUrl: "https://google.com",
+                                    redirectUrl : "https://yext.com",
                                     placeholderText: "Search...",
                                 });
                             },
                         })
                     }`,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            src="https://assets.sitescdn.net/answers-search-bar/v1.0/answers.min.js"
-            onload="ANSWERS.domReady(initAnswers)"
-            async
-            defer`,
           }}
         />
       </head>
